@@ -11,6 +11,7 @@
     justify-content: space-around;
     align-items: center;
     line-height: 5rem;
+    height: 5rem;
 }
 .left h1 {
     font-size: 2.5rem;
@@ -44,31 +45,30 @@
 .right ul li a:hover {
     background-color: #fff;
     border-radius: 7px;
-    color: rgb(22, 7, 36);
+    color: #00072D;
 }
-@media screen and (max-width: 805px) {
-    .list {
+@media screen and (max-width: 900px) {
+    ul {
         width: 100%;
         height: 100vh;
-        background-color: rgb(22, 7, 36);
+        background-color: #00072D;
         text-align: center;
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 4rem;
+        top: 4.9rem;
         left: 100%;
         transition: all 1s;
     }
-} 
-#check {
-    display: none;
-}
+    #check {
+        display: none;
+    }
 
-.checkBtn {
-    display: block;
-}
+    .checkBtn {
+        display: block;
+    }
 
-#check:checked~ul {
-    left: 0%;
+    #check:checked~ul {
+        left: 0%;
+    }
 }
-  
